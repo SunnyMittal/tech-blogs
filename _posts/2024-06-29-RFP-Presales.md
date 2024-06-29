@@ -8,11 +8,11 @@ Request for Proposal (RFP) and pre-sales activities are critical components of t
 1. RFP (Request for Proposal)
 Objective: To formally respond to a customer's detailed set of requirements with a proposal that outlines how your product or service meets those needs.
 
- _ Steps:
+ Steps:
  a. Understand the RFP Document
- Read Thoroughly: Carefully review the entire RFP document to understand the scope, requirements, evaluation criteria, and 
+  _ Read Thoroughly: Carefully review the entire RFP document to understand the scope, requirements, evaluation criteria, and 
  deadlines.
- Identify Key Requirements: Highlight the most critical requirements and expectations.
+  _ Identify Key Requirements: Highlight the most critical requirements and expectations.
  b. Conduct Internal Reviews
  Internal Kickoff Meeting: Gather a cross-functional team (sales, technical, legal, etc.) to discuss the RFP and allocate  
  responsibilities .
