@@ -10,26 +10,26 @@ Objective: To formally respond to a customer's detailed set of requirements with
 
 > Steps:
 - Understand the RFP Document
-  > Read Thoroughly: Carefully review the entire RFP document to understand the scope, requirements, evaluation criteria, and deadlines.
-  > Identify Key Requirements: Highlight the most critical requirements and expectations.
+    > Read Thoroughly: Carefully review the entire RFP document to understand the scope, requirements, evaluation criteria, and deadlines.
+    > Identify Key Requirements: Highlight the most critical requirements and expectations.
 - Conduct Internal Reviews
-  > Internal Kickoff Meeting: Gather a cross-functional team (sales, technical, legal, etc.) to discuss the RFP and allocate responsibilities.
+    > Internal Kickoff Meeting: Gather a cross-functional team (sales, technical, legal, etc.) to discuss the RFP and allocate responsibilities.
 
-  > Gap Analysis: Identify any gaps between your current offerings and the RFP requirements. Plan how to address these gaps.
+    > Gap Analysis: Identify any gaps between your current offerings and the RFP requirements. Plan how to address these gaps.
 - Develop the Proposal
-  > Executive Summary: Provide an overview of your understanding of the customer’s needs and your proposed solution.
+    > Executive Summary: Provide an overview of your understanding of the customer’s needs and your proposed solution.
   
-  > Detailed Solution Description: Describe how your solution meets the RFP requirements. Include technical details, methodologies, and approaches.
+    > Detailed Solution Description: Describe how your solution meets the RFP requirements. Include technical details, methodologies, and approaches.
   
-  > Compliance Matrix: Create a table that maps RFP requirements to your solution, showing how each requirement is addressed.
+    > Compliance Matrix: Create a table that maps RFP requirements to your solution, showing how each requirement is addressed.
   
-  > Pricing and Commercials: Include detailed pricing information, payment terms, and any additional costs. Case Studies and References: Provide examples of similar projects you have successfully completed and references from satisfied customers.
+    > Pricing and Commercials: Include detailed pricing information, payment terms, and any additional costs. Case Studies and References: Provide examples of similar projects you have successfully completed and references from satisfied customers.
 - Review and Finalize
-  > Internal Review: Conduct thorough reviews to ensure the proposal is accurate, complete, and compelling.
+    > Internal Review: Conduct thorough reviews to ensure the proposal is accurate, complete, and compelling.
 
-  > Compliance Check: Ensure all RFP requirements are met and the proposal adheres to the specified format and submission guidelines.
+    > Compliance Check: Ensure all RFP requirements are met and the proposal adheres to the specified format and submission guidelines.
 
-  > Submission: Submit the proposal by the specified deadline.
+    > Submission: Submit the proposal by the specified deadline.
     
   
 ## 2. Pre-sales Activities
