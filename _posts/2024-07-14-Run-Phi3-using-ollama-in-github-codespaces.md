@@ -6,7 +6,7 @@ date: 2024-07-05
 # Steps
 
 1. Create a codespace using Jupyter Notebook template in Codespaces
-    ![Jupyter noteBook template](../docs/assets/images/jupyterNotebookTemplateInGithubCodespaces.png)
+    ![Jupyter noteBook template](/tech-blogs/assets/jupyterNotebookTemplateInGithubCodespaces.png)
     
 2. Run below command to install ollama in codespace.
 
@@ -21,4 +21,4 @@ date: 2024-07-05
     ```ollama serve```
 
 5. Open a split terminal or a new terminal and run below command to load a model and start chat session with the LLM model
-    ![Starting chat session with LLM](../docs/assets/images/startingChatSesionWithPhi3LLMUsingOllama.png)
+    ![Starting chat session with LLM](/tech-blogs/assets/startingChatSesionWithPhi3LLMUsingOllama.png)
