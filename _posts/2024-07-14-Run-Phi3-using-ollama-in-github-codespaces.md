@@ -1,6 +1,6 @@
 ---
 title: "Run phi3 model using Ollama in github codespaces"
-date: 2024-07-05
+date: 2024-07-14
 ---
 
 # Steps
