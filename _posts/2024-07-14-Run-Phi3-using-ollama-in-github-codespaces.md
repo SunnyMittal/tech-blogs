@@ -3,7 +3,7 @@ title: "Run phi3 model using Ollama in github codespaces"
 date: 2024-07-05
 ---
 
-# Steps to run Phi3 LLM model using Ollama in github codespaces
+# Steps
 
 1. Create a codespace using Jupyter Notebook template in Codespaces
     ![Jupyter noteBook template](../docs/assets/images/jupyterNotebookTemplateInGithubCodespaces.png)
