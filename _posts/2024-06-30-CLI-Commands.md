@@ -1,5 +1,5 @@
 ---
-title: "Azure CLI commands"
+title: "CLI commands"
 date: 2024-06-30
 ---
 
@@ -39,4 +39,10 @@ date: 2024-06-30
 | Image | docker images                                                                                    | Check docker images               |
 |       | docker create --name api-typed-configuration-settings-container api-typed-configuration-settings | Create a container image          |
 |       | docker build -t <image tag> -f Dockerfile .                                                      | Build container image for the app |
+| | | |
+
+## Windows command line
+| Type | Command | Description |
+|-|-|-|
+| Netstat | netstat -p tcp -ano \| findstr :10001 | Command to find which process is listening on a localhost port 10001 |
 | | | |
