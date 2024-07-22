@@ -40,6 +40,7 @@ date: 2024-06-30
 | | | |
 
 ## Windows command line
+
 | Type | Command | Description |
 | - | - | - |
 | Netstat | netstat -p tcp -ano \| findstr :10001 | Command to find which process is listening on a localhost port 10001 |
