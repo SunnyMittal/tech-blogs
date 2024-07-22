@@ -27,8 +27,6 @@ date: 2024-06-30
 |         | dotnet new isef -lang c# --output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
 |         | dotnet new console -f net8.0 -n CustomerIterator       | Create dotnet console application                                   |
 | | | |
-| Function | func new --name WeatherDataIngestor --worker-runtime dotnetIsolated --target-framework net8.0 | Create an azure function |
-| | | |
 | File | dotnet new gitignore | Add gitignore file |
 
 
@@ -43,6 +41,6 @@ date: 2024-06-30
 
 ## Windows command line
 | Type | Command | Description |
-|-|-|-|
+| - | - | - |
 | Netstat | netstat -p tcp -ano \| findstr :10001 | Command to find which process is listening on a localhost port 10001 |
 | | | |
