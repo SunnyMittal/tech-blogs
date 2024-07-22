@@ -3,7 +3,7 @@ title: "Azure Functions"
 date: 2024-07-01
 ---
 
-# Azure functions
+## Development environment setup
 
 - Need to have Azure function core tools installed using x64 msi on windows 11 machine
 https://github.com/Azure/azure-functions-core-tools?tab=readme-ov-file
@@ -16,11 +16,11 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
 
 ## Install Azurite for running function locally
 
-### Option 1
+**Option 1**
 - Install "Azurite" extention in VS Code
 - ctrl + shift + p and then choose "Azurite: start" command
 
-### Option 2
+**Option 2**
 - Install azurite using npm
 
     ```npm install -g azurite```
