@@ -75,7 +75,7 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
 ![Add permission for function app managed identity on service bus via azure portal](/tech-blogs/assets/images/addFuncManagedIdentityPermissionOnSB.png)
 
 ## Publish function to Azure (this step didn't work properly)
-    - ctrl + shift + p
-    - choose "Azure Functions: Deploy to Function App"
-    - select the function app created in step above the publish step
+- ctrl + shift + p
+- choose "Azure Functions: Deploy to Function App"
+- select the function app created in step above the publish step
 
