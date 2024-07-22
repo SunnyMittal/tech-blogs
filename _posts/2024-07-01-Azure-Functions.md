@@ -49,25 +49,23 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
 - set environment variable ```$WEBSITE_CONTENTSHARE="func-sb-message-processor20240722"```
 
 - create function storage account separately
-    - az storage account create `
-        --name $STORAGE_ACCOUNT_NAME `
-        --resource-group $RESOURCE_GROUP `
-        --location $LOCATION `
-        --sku Standard_RAGRS `
-        --kind StorageV2 `
-        --min-tls-version TLS1_2 `
-        --allow-blob-public-access false `
+    > az storage account create
+        --name $STORAGE_ACCOUNT_NAME
+        --resource-group $RESOURCE_GROUP
+        --location $LOCATION
+        --sku Standard_RAGRS
+        --kind StorageV2
+        --min-tls-version TLS1_2
+        --allow-blob-public-access false
 
 - create function app in Azure
-    - az functionapp create `
-        --resource-group $RESOURCE_GROUP `
-        --consumption-plan-location $LOCATION `
-        --runtime $RUNTIME `
-        --functions-version $FUNCTIONS_VERSION `
-        --name $fUNCTION_NAME `
+    > az functionapp create
+        --resource-group $RESOURCE_GROUP
+        --consumption-plan-location $LOCATION
+        --runtime $RUNTIME
+        --functions-version $FUNCTIONS_VERSION
+        --name $fUNCTION_NAME
         --storage-account $STORAGE_ACCOUNT_NAME
-
-az functionapp create --resource-group AzureFunctionsQuickstart-rg --consumption-plan-location <REGION> --runtime dotnet-isolated --functions-version 4 --name <APP_NAME> --storage-account <STORAGE_NAME>
 
 ## Enable managed identity for function app
 ![Enable function app managed identity via azure portal](/tech-blogs/assets/images/enableFuncAppManagedIdentityViaAzurePortal.png)
