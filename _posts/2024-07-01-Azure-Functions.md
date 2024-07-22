@@ -39,16 +39,17 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
     - answer questions that follow
 
 ## Publish Function to Azure using Azure CLI
-- if needed cd into the azure function folder in VS Code terminal. e.g. C:\D\W\Samples\Func.ServiceBusMessageProcessor
-- set environment variable ```$RESOURCE_GROUP="rg-service-bus"```
-- set environment variable ```$LOCATION="australiaeast"```
-- set environment variable ```$RUNTIME="dotnet-isolated"```
-- set environment variable ```$FUNCTIONS_VERSION=4```
-- set environment variable ```$FUNCTION_NAME="func-sb-message-processor"```
-- set environment variable ```$STORAGE_ACCOUNT_NAME="storage20240722"```
-- set environment variable ```$WEBSITE_CONTENTSHARE="func-sb-message-processor20240722"```
+- If needed cd into the azure function folder in VS Code terminal. e.g. C:\D\W\Samples\Func.ServiceBusMessageProcessor
+- Set environment variables
+    - > $RESOURCE_GROUP="rg-service-bus"
+    - > $LOCATION="australiaeast"
+    - > $RUNTIME="dotnet-isolated"
+    - > $FUNCTIONS_VERSION=4
+    - > $FUNCTION_NAME="func-sb-message-processor"
+    - > $STORAGE_ACCOUNT_NAME="storage20240722"
+    - > $WEBSITE_CONTENTSHARE="func-sb-message-processor20240722"
 
-- create function storage account separately
+- Create function storage account separately
     > az storage account create
         --name $STORAGE_ACCOUNT_NAME
         --resource-group $RESOURCE_GROUP
@@ -58,7 +59,7 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
         --min-tls-version TLS1_2
         --allow-blob-public-access false
 
-- create function app in Azure
+- Create function app in Azure
     > az functionapp create
         --resource-group $RESOURCE_GROUP
         --consumption-plan-location $LOCATION
