@@ -39,6 +39,14 @@ date: 2024-06-30
 |       | docker build -t <image tag> -f Dockerfile .                                                      | Build container image for the app |
 | | | |
 
+
+## PowerShell
+
+| Type | Command | Description |
+| - | - | - |
+| Battery | powercfg /batteryreport /output "C:\battery-report.html" | Exports the device battery report to html file |
+
+
 ## Windows command line
 
 | Type | Command | Description |
