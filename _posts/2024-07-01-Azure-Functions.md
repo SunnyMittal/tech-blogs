@@ -47,7 +47,6 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
     - > $FUNCTIONS_VERSION=4
     - > $FUNCTION_NAME="func-sb-message-processor"
     - > $STORAGE_ACCOUNT_NAME="storage20240722"
-    - > $WEBSITE_CONTENTSHARE="func-sb-message-processor20240722"
 
 - Create function storage account separately
     > az storage account create
@@ -74,8 +73,17 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
 ## Allow read permission for azure function managed identity on service bus queue
 ![Add permission for function app managed identity on service bus via azure portal](/tech-blogs/assets/images/addFuncManagedIdentityPermissionOnSB.png)
 
-## Publish function to Azure (this step didn't work properly)
+## Add app settings for consuming service bus queue messages
+Below screenshot is for a different azure function name created via VisualStudio, but the idea is the same.
+
+![App settings](/tech-blogs/assets/images/AddAzureFunctionAppSettingsToConsumeSBQMessages.png)
+
+## Publish function to Azure
 - ctrl + shift + p
 - choose "Azure Functions: Deploy to Function App"
 - select the function app created in step above the publish step
 
+Note: This step didn't work properly likely due to long function name, keep the name shorter than 32 characters.
+
+## References
+- https://learn.microsoft.com/en-us/azure/azure-functions/functions-identity-based-connections-tutorial-2
