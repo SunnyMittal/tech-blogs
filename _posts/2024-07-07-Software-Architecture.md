@@ -39,7 +39,7 @@ These help to make a solution secure, scalable, resilient and maintainable. e.g.
 
     Ingredients for building secure solutions
 
-    - Implement authentication and authorisation
+    - Implement authentication and authorisation - https://medium.com/@iamprovidence/oauth-2-0-and-openid-in-simple-terms-7196089a1b29
     - Use parameter validation - https://medium.com/@madu.sharadika/validation-in-net-8-a250c4d278d2
 
     Ingredients for building performant solutions
