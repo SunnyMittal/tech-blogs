@@ -35,7 +35,12 @@ e.g.
 These are based on business requirements.
 
 ### Define non-functional requirements
-These help to make a solution secure, scalable, resilient and maintainable. e.g. use authentication and authorization flows. Use scalable tech stack like Azure functions, AKS, Kafka based cloud solutions for scalability. Follow best practices to create a performant solution. Use polly policies to make call between components fault tolerant and resilient. Implement modular components (broken down by business domain), logging, monitoring and alerts to make troubleshooting issues easier and increase solution maintainability.
+These help to make a solution secure, scalable, resilient and maintainable. e.g. use authentication, authorization flows and validation to keep it secure. Use scalable tech stack like Azure functions, AKS, Kafka based cloud solutions for scalability. Follow best practices to create a performant solution. Use polly policies to make call between components fault tolerant and resilient. Implement modular components (broken down by business domain), logging, monitoring and alerts to make troubleshooting issues easier and increase solution maintainability.
+
+    Ingredients for building secure solutions
+
+    - Implement authentication and authorisation
+    - Use parameter validation - https://medium.com/@madu.sharadika/validation-in-net-8-a250c4d278d2
 
     Ingredients for building performant solutions
 
