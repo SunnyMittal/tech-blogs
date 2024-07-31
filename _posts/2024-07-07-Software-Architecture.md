@@ -35,7 +35,26 @@ e.g.
 These are based on business requirements.
 
 ### Define non-functional requirements
-These help to make a solution secure, scalable, resilient and maintainable. e.g. use authentication and authorization flows. Use scalable tech stack like Azure functions, AKS, Kafka based cloud solutions for scalability. Use polly policies to make call between components fault tolerant and resilient. Implement modular components (broken down by business domain), logging, monitoring and alerts to make troubleshooting issues easier and increase solution maintainability.
+These help to make a solution secure, scalable, resilient and maintainable. e.g. use authentication, authorization flows and validation to keep it secure. Use scalable tech stack like Azure functions, AKS, Kafka based cloud solutions for scalability. Follow best practices to create a performant solution. Use polly policies to make call between components fault tolerant and resilient. Implement modular components (broken down by business domain), logging, monitoring and alerts to make troubleshooting issues easier and increase solution maintainability.
+
+    Ingredients for building secure solutions
+
+    - Implement authentication and authorisation - https://medium.com/@iamprovidence/oauth-2-0-and-openid-in-simple-terms-7196089a1b29
+    - Use parameter validation - https://medium.com/@madu.sharadika/validation-in-net-8-a250c4d278d2
+
+    Ingredients for building performant solutions
+
+    - Efficient data access
+    - Leverage async programming where feasible
+    - Use caching when feasible
+    - Idempotent APIs
+    - Secure APIs using OAuth2, OIDC, stateless JWT tokens to enable security without affecting scalability.
+    - Performance monitoring, alerts
+    - Keep scalability in mind, use load balancers to distribute traffic to multiple instances of application.
+    - Consider rate limiting or throttling
+
+    References
+    https://medium.com/@paulotorres/advanced-techniques-in-net-core-for-building-high-performance-apis-7e9a6e978106
 
 ### Take other constraints into account ([Ref](https://medium.com/@srinathperera/how-to-approach-software-architecture-a-first-principle-perspective-3b865d35bb9b))
 
