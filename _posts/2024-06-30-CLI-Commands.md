@@ -40,6 +40,14 @@ date: 2024-06-30
 | | | |
 
 
+## [Azure](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
+
+| Type | Command | Description |
+| - | - | - |
+| extensions | az extension list --output table | Check installed extensions |
+| | az extension list --query "[?name=='containerapp'].*" --output table | Filter output of az cli command using [JMESPath](https://jmespath.org/tutorial.html) query.|
+
+
 ## PowerShell
 
 | Type | Command | Description |
