@@ -1,6 +1,6 @@
 ---
 title: "C/C++ dev env setup on windows with VS Code"
-date: 2024-07-18
+date: 2024-08-04
 ---
 
 There are multiple ways to setup C/C++ dev environment on windows 11 using VS Code.
