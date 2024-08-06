@@ -39,8 +39,10 @@ Provision Azure SQL DB within the same resource group as Azure container app.
 
 ## Add Azure container app identity name to Azure SQL DB as a user with read and write permissions
 **I enabled internet access to database for this step (Need to find better alternative to this).**
+
 As needed to connect to db using Azure Data Studio and execute SQL scripts to add the Container app identity name to read and write roles in the database.
 https://learn.microsoft.com/en-us/azure/app-service/tutorial-connect-msi-sql-database?tabs=vscode%2Cefcore%2Cdotnetcore
+
 
 ## Update dotnet web API to add person controller and connection to Azure SQL DB
 Add person model, db context and controller with ability to post and get person.
@@ -51,7 +53,7 @@ This will trigger the build and deploy of the app to Azure container app.
 Use .http file to run post and get commands with appropriate body.
 
 ## Setup managed identity based connection between Azure container app and Azure SQL database
-This can be done easily by setting up connection from Azure container app to Azure SQL database.
+This can be done easily by setting up service connector from Azure container app to Azure SQL database.
 Which boils down to below commands.
 
 ```
@@ -61,4 +63,9 @@ az containerapp connection create sql --connection sql_faadc --source-id /subscr
 ```
 
 ## Test that web API running in cloud is able to call Azure SQL DB in cloud
-Use .http file to send get, post requests to the Azure container app url hosted in cloud. 
+Use .http file to send get, post requests to the Azure container app url hosted in cloud.
+
+**Note: I had to enable IP address of the Azure container app to be able to connect container app with SQL DB (This isn't ideal and better solution must be found).**
+This IP address can be found in the container app log stream by checking after 500 error while running .http file request for person endpoint. It shows IP address in the logs.
+
+![AllowIPAddress](/tech-blogs/assets/images/allowAzureContainerAppIPForAzureSQLDBConn.png)
