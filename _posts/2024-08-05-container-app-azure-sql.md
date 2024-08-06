@@ -66,6 +66,7 @@ az containerapp connection create sql --connection sql_faadc --source-id /subscr
 Use .http file to send get, post requests to the Azure container app url hosted in cloud.
 
 **Note: I had to enable IP address of the Azure container app to be able to connect container app with SQL DB (This isn't ideal and better solution must be found).**
+
 This IP address can be found in the container app log stream by checking after 500 error while running .http file request for person endpoint. It shows IP address in the logs.
 
 ![AllowIPAddress](/tech-blogs/assets/images/allowAzureContainerAppIPForAzureSQLDBConn.png)
