@@ -15,28 +15,36 @@ date: 2024-06-30
 | | | |
 | choco | choco uninstall azure-functions-core-tools-3 | Uninstall package using choco |
 | | | |
-| Runtime | dotnet --list-runtimes | List .net runtimes |
+| runtime | dotnet --list-runtimes | List .net runtimes |
 | | | |
 | dotnet Templates | dotnet new list | List all dotnet cli templates |
 | | | |
-| Solution | dotnet new sln --name API.Demo | Create a new solution file  |
+| solution | dotnet new sln --name API.Demo | Create a new solution file  |
 |          | dotnet sln add API.Demo        | Add project to the solution |
 |          | dotnet sln API.Demo.sln list   | List projects in a sln file |
 | | | |
-| Project | dotnet new webapi -minimal -f net8.0 --output API.Demo | Create new dotnet webapi project                                    |
+| project | dotnet new webapi -minimal -f net8.0 --output API.Demo | Create new dotnet webapi project                                    |
 |         | dotnet new isef -lang c# --output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
 |         | dotnet new console -f net8.0 -n CustomerIterator       | Create dotnet console application                                   |
+|         | dotnet list package --outdated                         | List outdated packages                                              |
+|         | dotnet add package <package names separated by space>  | Update outdated packages                                            |
 | | | |
-| File | dotnet new gitignore | Add gitignore file |
+| package | dotnet add package CommandLineParser | Install a nuget package using dotnet CLI |
+| | | |
+| file | dotnet new gitignore | Add gitignore file |
+| run | dotnet run --project .\Console.GetAzureBuildAgentIPs.csproj -- -f "C:\\Users\\USER\\Downloads\\ServiceTags_Public_20240805.json" -r "australiaeast" | Run console application passing arguments. Notice '--' separating the arguments for the console application |
+| | | |
 
 
 ## Docker
 
 | Type | Command | Description |
 | - | - | - |
-| Image | docker images                                                                                    | Check docker images               |
-|       | docker create --name api-typed-configuration-settings-container api-typed-configuration-settings | Create a container image          |
-|       | docker build -t <image tag> -f Dockerfile .                                                      | Build container image for the app |
+| Image | docker images                                                                                    | Check docker images                    |
+|       | docker create --name api-typed-configuration-settings-container api-typed-configuration-settings | Create a container image               |
+|       | docker build -t <image tag> -f Dockerfile .                                                      | Build container image for the app      |
+|       | docker logs <container-id>                                                                       | Monitor/Watch logs of a container      |
+|       | docker top <container name>                                                                      | List UID, PID, PPID and other details  |
 | | | |
 
 
@@ -44,8 +52,15 @@ date: 2024-06-30
 
 | Type | Command | Description |
 | - | - | - |
-| extensions | az extension list --output table | Check installed extensions |
-| | az extension list --query "[?name=='containerapp'].*" --output table | Filter output of az cli command using [JMESPath](https://jmespath.org/tutorial.html) query.|
+| extensions | az extension list --output table                                     | Check installed extensions                                                                 |
+|            | az extension list --query "[?name=='containerapp'].*" --output table | Filter output of az cli command using [JMESPath](https://jmespath.org/tutorial.html) query |
+| | | |
+| acr | az acr login --name <registry-name>                          | login to an Azure container registry                 |
+|     | az acr repository list --name <registry-name> --output table | List container images in an Azure container registry |
+|     | az acr show-usage -n acr4aks20240809                         | List size of all images in Azure container registry  |
+|     | az acr repository show-manifests -n acr4aks20240809 --repository dotnet8.api1 --detail --query '[].{Size: imageSize, Tags: tags}' | Get size for all tags of one repository |
+
+
 
 
 ## PowerShell
