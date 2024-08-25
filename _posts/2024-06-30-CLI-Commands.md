@@ -5,7 +5,7 @@ date: 2024-06-30
 
 # This is list of useful CLI commands
 
-## dotnet
+## [Dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet)
 
 | Type          | Command     | Description |
 | ------------- | ----------- | ----------- |
@@ -23,7 +23,7 @@ date: 2024-06-30
 |          | dotnet sln add API.Demo        | Add project to the solution |
 |          | dotnet sln API.Demo.sln list   | List projects in a sln file |
 | | | |
-| project | dotnet new webapi -minimal -f net8.0 --output API.Demo | Create new dotnet webapi project                                    |
+| project | dotnet new webapi -f net8.0 -o API.Demo                | Create new dotnet webapi project                                    |
 |         | dotnet new isef -lang c# --output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
 |         | dotnet new console -f net8.0 -n CustomerIterator       | Create dotnet console application                                   |
 |         | dotnet list package --outdated                         | List outdated packages                                              |
@@ -36,7 +36,7 @@ date: 2024-06-30
 | | | |
 
 
-## Docker
+## [Docker](https://docs.docker.com/reference/cli/docker/buildx/build/)
 
 | Type | Command | Description |
 | - | - | - |
@@ -68,6 +68,9 @@ date: 2024-06-30
 | Type | Command | Description |
 | - | - | - |
 | Battery | powercfg /batteryreport /output "C:\battery-report.html" | Exports the device battery report to html file |
+| | | |
+| docker | Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform | Enable virtual machine platform on windows 11 for docker desktop installation |
+| | | |
 
 
 ## Windows command line
