@@ -60,10 +60,15 @@ date: 2024-06-30
 | extensions | az extension list --output table                                     | Check installed extensions                                                                 |
 |            | az extension list --query "[?name=='containerapp'].*" --output table | Filter output of az cli command using [JMESPath](https://jmespath.org/tutorial.html) query |
 | | | |
-| acr | az acr login --name <registry-name>                          | login to an Azure container registry                 |
-|     | az acr repository list --name <registry-name> --output table | List container images in an Azure container registry |
-|     | az acr show-usage -n acr4aks20240809                         | List size of all images in Azure container registry  |
+| acr | az acr login --name <registry-name>                                                                                               | login to an Azure container registry                 |
+|     | az acr repository list --name <registry-name> --output table                                                                      | List container images in an Azure container registry |
+|     | az acr show-usage -n acr4aks20240809                                                                                              | List size of all images in Azure container registry  |
 |     | az acr repository show-manifests -n acr4aks20240809 --repository dotnet8.api1 --detail --query '[].{Size: imageSize, Tags: tags}' | Get size for all tags of one repository |
+| | | |
+| aks | az aks stop --name aksCluster20240809 --resource-group rg-aks-test  | Stop AKS cluster to save cost        |
+|     | az aks show --name aksCluster20240809 --resource-group rg-aks-test  | Verify cluster is stopped or started |
+|     | az aks start --name aksCluster20240809 --resource-group rg-aks-test | Start AKS cluster                    |
+| | | |
 
 
 ## PowerShell
