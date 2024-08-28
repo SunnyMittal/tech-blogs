@@ -6,7 +6,9 @@ date: 2024-07-07
 ## Below are set of steps and considerations to be taken into account in order to implement a well architected software application/solution.
 
 Its like a painting which looks pretty from a distance no matter which colors (technology, tools etc...) have been used to create it.
-Below are broad steps to be followed to architect/design a solution that is fit for its purpose. (**Note: Might not be perfect in all aspects, <u>it should be fit for its purpose</u>**)
+Below are broad steps to be followed to architect/design a solution that is fit for its purpose (**Note: Might not be perfect in all aspects, <u>it should be fit for its purpose</u>**).
+
+Maintain [architecture decision records (ADR).](https://adr.github.io/)
 
 - Start from problem statement
 - Document regulatory requirements
@@ -33,6 +35,7 @@ e.g.
 
 ### Define functional requirements
 These are based on business requirements.
+- [Event storming](https://www.eventstorming.com/)
 
 ### Define non-functional requirements
 These help to make a solution secure, scalable, resilient and maintainable. e.g. use authentication, authorization flows and validation to keep it secure. Use scalable tech stack like Azure functions, AKS, Kafka based cloud solutions for scalability. Follow best practices to create a performant solution. Use polly policies to make call between components fault tolerant and resilient. Implement modular components (broken down by business domain), logging, monitoring and alerts to make troubleshooting issues easier and increase solution maintainability.
@@ -69,8 +72,14 @@ The first two follow the project management triangle or triple constraints ( tim
 **We need to think deeply about things that are hard to change but use an agile method with user feedback while considering the context factors also in the decisions.**
 
 ### Prepare first cut of design
+- [C4 Architecture diagrams](https://c4model.com/)
+    - Context
+    - Containers
+    - Components
+    - Code
 
 ### Seek peer review and refine it
+- [Request for Comments (RFCs).](https://www.ietf.org/process/rfcs/)
 
 ### Seek stakeholder review and refine it
 

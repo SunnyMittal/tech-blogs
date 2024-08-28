@@ -5,7 +5,7 @@ date: 2024-06-30
 
 # This is list of useful CLI commands
 
-## dotnet
+## [Dotnet](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet)
 
 | Type          | Command     | Description |
 | ------------- | ----------- | ----------- |
@@ -27,7 +27,7 @@ date: 2024-06-30
 |         | dotnet new isef -lang c# \-\-output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
 |         | dotnet new console -f net8.0 -n CustomerIterator       | Create dotnet console application                                   |
 |         | dotnet list package \-\-outdated                         | List outdated packages                                              |
-|         | dotnet add package <package names separated by space>  | Update outdated packages                                            |
+|         | dotnet add package \<package names separated by space\>  | Update outdated packages                                            |
 | | | |
 | package | dotnet add package CommandLineParser | Install a nuget package using dotnet CLI |
 | | | |
@@ -36,15 +36,20 @@ date: 2024-06-30
 | | | |
 
 
-## Docker
+## [Docker](https://docs.docker.com/reference/cli/docker/buildx/build/)
 
 | Type | Command | Description |
 | - | - | - |
-| Image | docker images                                                                                    | Check docker images                    |
-|       | docker create \-\-name api-typed-configuration-settings-container api-typed-configuration-settings | Create a container image               |
-|       | docker build -t <image tag> -f Dockerfile .                                                      | Build container image for the app      |
-|       | docker logs <container-id>                                                                       | Monitor/Watch logs of a container      |
-|       | docker top <container name>                                                                      | List UID, PID, PPID and other details  |
+| Image | docker images                                                                                      | Check docker images                                                   |
+|       | docker create \-\-name api-typed-configuration-settings-container api-typed-configuration-settings | Create a container image                                              |
+|       | docker build -t <image tag> -f Dockerfile .                                                        | Build container image for the app                                     |
+|       | docker rmi demo:dev                                                                                | Remove a docer image                                                  |
+|       | docker ps                                                                                          | List all running docker containers                                    |
+|       | docker run \-\-rm -it -p 5180:5180/tcp apidemo:1.1.0                                               | Run docker image:tag interactively with port mapping, remove on close |
+|       | docker run \-\-rm -d -p 5180:5180/tcp apidemo:1.1.0                                                | Run docker image:tag in detached mode with port mapping, remove later |
+|       | docker stop 66f2b34a26f4                                                                           | Stop docker container with container id                               |
+|       | docker logs <container-id>                                                                         | Monitor/Watch logs of a container                                     |
+|       | docker top <container name>                                                                        | List UID, PID, PPID and other details                                 |
 | | | |
 
 
@@ -71,6 +76,9 @@ date: 2024-06-30
 | Type | Command | Description |
 | - | - | - |
 | Battery | powercfg /batteryreport /output "C:\battery-report.html" | Exports the device battery report to html file |
+| | | |
+| docker | Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform | Enable virtual machine platform on windows 11 for docker desktop installation |
+| | | |
 
 
 ## Windows command line
