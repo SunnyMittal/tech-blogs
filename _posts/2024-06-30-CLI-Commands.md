@@ -53,6 +53,14 @@ date: 2024-06-30
 | | | |
 
 
+## Kubernetes (K8s)
+| Type | Command | Description |
+| - | - | - |
+| kubectl | kubectl apply -f deployment.yaml | Deploy a service to K8s cluster |
+|         | kubectl get services             | Get K8s service external IP     |
+| | | |
+
+
 ## [Azure](https://learn.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest)
 
 | Type | Command | Description |
@@ -76,8 +84,11 @@ date: 2024-06-30
 | Type | Command | Description |
 | - | - | - |
 | Battery | powercfg /batteryreport /output "C:\battery-report.html" | Exports the device battery report to html file |
+| Version | $PSVersionTable | Check powershell version |
 | | | |
 | docker | Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform | Enable virtual machine platform on windows 11 for docker desktop installation |
+| | | |
+| file | New-Item .\Dockerfile | Create a file from powershell prompt. e.g. in VS code |
 | | | |
 
 
