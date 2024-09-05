@@ -92,6 +92,7 @@ date: 2024-06-30
 | | | |
 | environment variable | $env:ACR_RGNAME='acr-01-RG'                                                                  | set an environment variable in active session |
 |                      | $env:ACR_NAME=$(az acr list --resource-group $env:ACR_RGNAME --query "[].name" --output tsv) | use existing environment variable to get info |
+| | | |
 
 
 ## Windows command line
