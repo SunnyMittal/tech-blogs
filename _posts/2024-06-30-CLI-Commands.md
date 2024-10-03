@@ -56,8 +56,22 @@ date: 2024-06-30
 ## Kubernetes (K8s)
 | Type | Command | Description |
 | - | - | - |
-| kubectl | kubectl apply -f deployment.yaml | Deploy a service to K8s cluster |
-|         | kubectl get services             | Get K8s service external IP     |
+| kubectl | kubectl apply -f deployment.yaml | Deploy a service to K8s cluster                                                        |
+|         | kubectl get services             | Get K8s service external IP                                                            |
+|         | kubectl port-forward service/myhelmapp 8888:80 --namespace dev | forward traffic from localhost:8888 to container port 80 |
+| | | |
+[Create powershell shortcut/alias for kubectl commands](https://manjit28.medium.com/powershell-define-shortcut-alias-for-common-kubernetes-commands-1c006d68cce2)
+[Create bash shortcut/alias for kubectl commands](https://dev.to/zenika/kubernetes-a-pragmatic-kubectl-aliases-collection-17oc)
+
+## Bash prompt for Linux
+| Type | Command | Description |
+| - | - | - |
+| alias | alias k=kubectl | sets k as alias for kubectl command |
+
+## Helm
+| Type | Command | Description |
+| - | - | - |
+| | helm template . | Generate and display output files after applying variable values to yaml files in current working directory |
 | | | |
 
 
@@ -71,7 +85,7 @@ date: 2024-06-30
 | acr | az acr login \-\-name <registry-name>                                                                                                   | login to an Azure container registry                 |
 |     | az acr repository list \-\-name <registry-name> --output table                                                                          | List container images in an Azure container registry |
 |     | az acr show-usage -n acr4aks20240809                                                                                                    | List size of all images in Azure container registry  |
-|     | az acr repository show-manifests -n acr4aks20240809 \-\-repository dotnet8.api1 \-\-detail \-\-query '[].{Size: imageSize, Tags: tags}' | Get size for all tags of one repository |
+|     | az acr repository show-manifests -n acr4aks20240809 \-\-repository dotnet8.api1 \-\-detail \-\-query '[].{Size: imageSize, Tags: tags}' | Get size for all tags of one repository              |
 | | | |
 | aks | az aks stop \-\-name aksCluster20240809 \-\-resource-group rg-aks-test  | Stop AKS cluster to save cost        |
 |     | az aks show \-\-name aksCluster20240809 \-\-resource-group rg-aks-test  | Verify cluster is stopped or started |
@@ -92,6 +106,8 @@ date: 2024-06-30
 | | | |
 | environment variable | $env:ACR_RGNAME='acr-01-RG'                                                                  | set an environment variable in active session |
 |                      | $env:ACR_NAME=$(az acr list --resource-group $env:ACR_RGNAME --query "[].name" --output tsv) | use existing environment variable to get info |
+| | | |
+| alias | Set-Alias -Name k -Value kubectl | Sets 'k' as an alias for 'kubectl' |
 | | | |
 
 
