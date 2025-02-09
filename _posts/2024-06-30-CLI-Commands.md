@@ -20,12 +20,12 @@ date: 2024-06-30
 | dotnet Templates | dotnet new list | List all dotnet cli templates |
 | | | |
 | solution | dotnet new sln \-\-name API.Demo | Create a new solution file  |
-|          | dotnet sln add API.Demo        | Add project to the solution |
-|          | dotnet sln API.Demo.sln list   | List projects in a sln file |
+|          | dotnet sln add API.Demo          | Add project to the solution |
+|          | dotnet sln API.Demo.sln list     | List projects in a sln file |
 | | | |
 | project | dotnet new webapi -minimal -f net8.0 \-\-output API.Demo | Create new dotnet webapi project                                    |
 |         | dotnet new isef -lang c# \-\-output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
-|         | dotnet new console -f net8.0 -n CustomerIterator       | Create dotnet console application                                   |
+|         | dotnet new console -f net8.0 -n CustomerIterator         | Create dotnet console application                                   |
 |         | dotnet list package \-\-outdated                         | List outdated packages                                              |
 |         | dotnet add package \<package names separated by space\>  | Update outdated packages                                            |
 | | | |
@@ -117,3 +117,11 @@ date: 2024-06-30
 | - | - | - |
 | Netstat | netstat -p tcp -ano \| findstr :10001 | Command to find which process is listening on a localhost port 10001 |
 | | | |
+
+## Java/Maven
+| Type | Command | Description |
+| - | - | - |
+| | java -version | get java version installed on windows |
+| | mvn -version | get maven version installed on windows |
+| | mvn versions:display-dependency-updates | checks the dependency packages for which upgrade is available |
+| | mvn versions:use-latest-releases | update all dependency packages to latest version |
