@@ -119,6 +119,7 @@ date: 2024-06-30
 | | | |
 
 ## Java/Maven
+
 | Type | Command | Description |
 | - | - | - |
 | | java -version | get java version installed on windows |
