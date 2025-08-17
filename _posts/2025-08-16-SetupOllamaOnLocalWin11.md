@@ -7,7 +7,7 @@ date: 2025-08-16
 
 > Steps:
 1. Download ollamaSetup.exe from https://ollama.com/download
-    - Setup system environment variable as below. This will keep place the downloaded model in a specified folder.
+    Setup system environment variable as below. This will keep place the downloaded model in a specified folder.
     ```
     OLLAMA_MODELS = D:\AI\Models
     ```
