@@ -28,13 +28,11 @@ date: 2025-08-16
     REM From cmd prompt execute below command to set the environment variable
     SET OLLAMA_BASE_URL="http://localhost:11434/v1"
     SET OLLAMA_MODEL="codellama:34b-instruct"
-
     REM test if the value is set using below command
     echo %OLLAMA_MODEL%
     ```
 5. Install Continue.dev extension in VS Code
 6. Configure Continue extension with local model
-
     Config file location: C:\Users\sunny\.continue\config.yaml
     ```
     name: Local Assistant
