@@ -23,11 +23,14 @@ date: 2024-06-30
 |          | dotnet sln add API.Demo          | Add project to the solution |
 |          | dotnet sln API.Demo.sln list     | List projects in a sln file |
 | | | |
-| project | dotnet new webapi -minimal -f net8.0 \-\-output API.Demo | Create new dotnet webapi project                                    |
-|         | dotnet new isef -lang c# \-\-output .\IdentityServer\    | Create new project for dotnet identity server with entity framework |
-|         | dotnet new console -f net8.0 -n CustomerIterator         | Create dotnet console application                                   |
-|         | dotnet list package \-\-outdated                         | List outdated packages                                              |
-|         | dotnet add package \<package names separated by space\>  | Update outdated packages                                            |
+| project | dotnet new webapi -minimal -f net8.0 \-\-output API.Demo                                                                                                            | Create new dotnet webapi project                                                        |
+|         | dotnet new isef -lang c# \-\-output .\IdentityServer\                                                                                                               | Create new project for dotnet identity server with entity framework                     |
+|         | dotnet new console -f net8.0 -n CustomerIterator                                                                                                                    | Create dotnet console application                                                       |
+|         | dotnet list package \-\-outdated                                                                                                                                    | List outdated packages                                                                  |
+|         | dotnet add package \<package names separated by space\>                                                                                                             | Update outdated packages                                                                |
+|         | dotnet add .\SchemaCompare.Test.csproj reference  ..\SchemaCompare\SchemaCompare.csproj                                                                             | To add reference to SchemaCompare.csproj in the SchemaCompare.Test.csproj.              |
+|         | dotnet remove reference ..\SchemaCompare\SchemaCompare.csproj                                                                                                       | Remove a project refernce.                                                              |
+|         | <ItemGroup> <br> <Content Include=".\Abbreviations\abbreviations.csv"> <br> <CopyToOutputDirectory>Always</CopyToOutputDirectory> <br> </Content> <br> </ItemGroup> | To mark a file as copy always to output directory. Add these lines in the .csproj file. |
 | | | |
 | package | dotnet add package CommandLineParser | Install a nuget package using dotnet CLI |
 | | | |
