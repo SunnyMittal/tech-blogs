@@ -11,7 +11,7 @@ date: 2025-08-16
     ```
     OLLAMA_MODELS = D:\AI\Models
     ```
-2. Pull Qwen/Qwen2.5-Coder-32B-Instruct model using below command
+2. Pull codellama:34b-instruct model using below command
     ```
     ollama pull codellama:34b-instruct
     ```
@@ -69,4 +69,5 @@ date: 2025-08-16
 
 ## References
 - https://ollama.com/download
+- https://docs.ollama.com/cli
 - https://ollama.com/blog/continue-code-assistant
