@@ -12,6 +12,8 @@ date: 2024-06-30
 | winget | winget list --name azure function                         | List packages filtered by name   |
 |        | winget install -e \-\-id Microsoft.Azure.FunctionsCoreTools | Install package                  |
 |        | winget install -e \-\-id Microsoft.AzureCLI                 | Install Azure CLI latest version |
+|        | winget upgrade                                              | Check for packages that have upgrades available |
+|        | winget upgrade --all                                        | Upgrade all packages |
 | | | |
 | choco | choco uninstall azure-functions-core-tools-3 | Uninstall package using choco |
 | | | |
