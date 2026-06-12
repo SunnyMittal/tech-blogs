@@ -76,7 +76,7 @@ __*Note: if you need to see detailed logs then append ```--debug``` at the end o
 ## Add app settings for consuming service bus queue messages
 Below screenshot is for a different azure function name created via VisualStudio, but the idea is the same.
 
-![App settings](/tech-blogs/assets/images/AddAzureFunctionAppSettingsToConsumeSBQMessages.png)
+![App settings](/tech-blogs/assets/images/addAzureFunctionAppSettingsToConsumeSBQMessages.png)
 
 ## Publish function to Azure
 - ctrl + shift + p
