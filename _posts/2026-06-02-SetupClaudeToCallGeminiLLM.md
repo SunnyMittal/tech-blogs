@@ -94,5 +94,7 @@ Sample response:
 $Env:ANTHROPIC_BASE_URL="http://localhost:3000"
 ```
 
+![App settings](/tech-blogs/assets/images/callGeminiFromClaudeDesktopViaGateway.png)
+
 ## References
 - query to [DuckDuckGo AI](https://duck.ai/chat) - `launch claude with gemini on windows machine using gateway approach`
